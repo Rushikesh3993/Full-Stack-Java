@@ -1,0 +1,29 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: linear-gradient(red,white , green);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+#abc {
+    width: 450px;
+    /* height: 100px; */
+    border: 3px solid black;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: white;
+    
+}
+
+#xyz {
+    background-image: url(../../imgaes/banner.jpeg);
+    background-size: cover;
+
+}
+
