@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        .team-container fieldset {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+        }
+
+        .main {
+            width: 300px;
+            height: 450px;
+            border: 3px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+        }
+
+        .main img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid;
+            box-shadow: 0px 1px 5px 5px rgb(226, 192, 43);
+        }
+
+        .main:hover {
+            box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.3);
+            background-color: #f0f8ff;
+        }
+
+        .main p {
+            flex-grow: 1;
+            text-align:center;
+            padding: 0 10px;
+        }
+
+        p {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        h2 {
+            text-shadow: -1px 3px 5px;
+        }
+
+        i {
+            text-shadow: -1px 3px 5px rgb(226, 43, 76);
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="team-container">
+        <fieldset>
+            <legend>
+                <h1>My Team Members</h1>
+            </legend>
+            <div class="main">
+                <img src="https://www.seoclerk.com/pics/000/926/731/e5025c0c8ded3c41d500d8e47c3a9942.png"
+                    alt="profile picture">
+                <h2>Rushikesh Mote</h2>
+                <i class="fa fa-code"> <i><u>Frontend Developer</u></i></i>
+                <p>
+                    A frontend developer passionate about creating clean, responsive, and visually appealing user
+                    interfaces using HTML, CSS, and JavaScript.
+                </p>
+            </div>
+            <br>
+
+            <div class="main">
+                <img src="https://st2.depositphotos.com/1007566/44006/v/450/depositphotos_440068514-stock-illustration-blond-happy-young-man-character.jpg"
+                    alt="profile picture">
+                <h2>Jhon Dev</h2>
+                <i class="fa fa-code"> <i><u>Backend Developer</u></i></i>
+                <p>
+                    A backend developer experienced in designing scalable APIs and server-side logic using Node.js,
+                    Express, and databases like MongoL.
+                </p>
+            </div>
+            <br>
+
+            <div class="main">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvhaBxJlK7tQtGZjVxmkiogujl88fKKM7ul3fyPk1lYDBi4DihhGpQJhGstp2ka2RlpTI&usqp=CAU"
+                    alt="profile picture">
+                <h2>Anjali Sharma</h2>
+                <i class="fa fa-code"> <i><u>App Developer</u></i></i>
+                <p>
+                    A mobile app developer with experience in building smooth, user-friendly Android and iOS apps using
+                    Flutter or React Native. Focuses on performance, UI/UX, and cross-platform compatibility.
+                </p>
+            </div>
+            <br>
+
+            <div class="main">
+                <img src="https://st2.depositphotos.com/58455982/51073/v/450/depositphotos_510736672-stock-illustration-man-avatar-character-vector-illustration.jpg"
+                    alt="profile picture">
+                <h2>Ashok Verma</h2>
+                <i class="fa fa-code"> <i><u>Cloud Developer</u></i></i>
+                <p>
+                    A cloud developer experienced in deploying and managing applications on cloud platforms like AWS,
+                    Azure, or Google Cloud. Ensures scalability, security, and automation using CI/CD pipelines and
+                    serverless architecture.
+                </p>
+            </div>
+        </fieldset>
+    </div>
+</body>
+
+</html>
