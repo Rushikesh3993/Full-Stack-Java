@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .innerdiv{
+            height: 310px;
+            width: 300px;
+            background-color: aqua;
+            opacity: 0;
+            top: 0;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            
+        }
+
+        .maindiv:hover .innerdiv{
+            opacity: 0.5;
+        }
+
+        .maindiv{
+            height: auto;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="maindiv">
+        <img src="/Web Design/imgaes/goku.png" alt="" height="300px" width="300px">
+        <div class="innerdiv">Hello World</div>
+    </div>
+</body>
+</html>
