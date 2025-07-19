@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(../imgaes/Nature.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .panda {
+            height: 300px;
+            width: 300px;
+            bottom: 50px;
+            position: relative;
+            background-image: url(../imgaes/Panda.png);
+            background-repeat: no-repeat;
+            animation: rushi 1s steps(11) infinite, moveRight 10s linear infinite;
+        }
+
+        @keyframes rushi {
+            from {
+                background-position: 0px;
+            }
+
+            to {
+                background-position: 3000px;
+            }
+        }
+
+        @keyframes moveRight {
+            0% {
+                left: -100px;
+            }
+
+            100% {
+                left: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panda"></div>
+
+</body>
+
+</html>
