@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function test1(){
+            let a = 10; // local
+            document.write(a); //10
+        }
+        //document.write(a); //error
+        test1();
+
+        var b =10; //global
+        function test2() {
+            b=50;
+            document.write(b); //50
+        }
+        document.write(b); //10
+        test2();
+    </script>
+</body>
+</html>
