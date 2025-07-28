@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <label for="numr">Number</label>
+    <input type="number" name="num" id="num" placeholder="Enter Your Number"><br><br>
+    <button type="button" onclick="evenodd(n)">Click here</button>
+
+    <script>
+
+
+        function evenodd(num) { // num is parameter //num is formal value
+            if (num % 2 == 0) {
+                alert("Even Number");
+            } else {
+                alert("Odd Number");
+            }
+        }
+
+        var n = Number(prompt("Enter Your number :"))
+
+        evenodd(n); // arguments // n is actual value
+    </script>
+</body>
+
+</html>
