@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="password" placeholder="Enter Your Password" id="pass1" onkeyup="check()"><br><br>
+        <input type="password" placeholder="Confirm Your Password" id="pass2" onkeyup="check()"><br><br>
+
+        <!-- <span id="correct" style="color: green;"></span> -->
+        <span id="error1" style="color: red;"></span>
+        
+    </form>
+</body>
+
+<script>
+    function check() {
+         var fn = document.getElementById("pass1").value;
+         var fn1 = document.getElementById("pass2").value;
+
+         if(fn == fn1){
+            document.getElementById("error1").innerText = "Password Match..";
+            document.getElementById("error1").style.color= "green";
+            // document.getElementById("error1").style.color= "";
+         }else{
+            document.getElementById("error1").innerText = "Your Password Is Incorrect..";
+            // document.getElementById("error1").innerText = "";
+
+         }
+
+
+
+    }
+</script>
+
+</html>

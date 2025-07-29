@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter Your First Name" id="firstname"><br><br>
+        <input type="text" placeholder="Enter Your Last Name" id="lastname"><br><br>
+
+        <button type="button" onclick="check()">Submit</button>
+    </form>
+
+    <script>
+        function check(){
+            var fn = document.getElementById("firstname").value;
+            var ln = document.getElementById("lastname").value;
+
+            alert(fn + " " +ln);
+
+        }
+    </script>
+</body>
+</html>
