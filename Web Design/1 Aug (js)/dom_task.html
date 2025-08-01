@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="ip" name="input">
+        <br><br> Characters Count: <span id="output1"></span><br><br>
+        Words Count: <span id="output2"></span><br><br>
+
+        <button type="button" onclick="count()">Check</button>
+    </form>
+
+    <script>
+
+        function count() {
+            var v = document.getElementById("ip").value;
+            //alert(v);
+            // alert(v.length);
+
+            var Character_count = v.length;
+            document.getElementById("output1").innerText = Character_count;
+
+            var words_count = 0;
+
+            for(let i = 0; i < v.length; i++){
+                if(v[i] == " "){
+                    words_count++;
+                }
+            }
+
+
+            document.getElementById("output2").innerText = words_count;
+              
+            
+
+        }
+
+    </script>
+</body>
+
+</html>
