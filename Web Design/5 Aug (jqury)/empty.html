@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <div style="height: 100px;background-color: aqua;">Good Morning
+        <!-- <textarea name="" id="" placeholder="Enter your text"></textarea> -->
+    </div>
+    <button>click Here</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").empty();
+                // $("textarea").empty();
+
+            });
+        });
+    </script>
+</body>
+</html>
