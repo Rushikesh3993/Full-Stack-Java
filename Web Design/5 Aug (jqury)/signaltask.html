@@ -66,21 +66,21 @@
             $("#btn1").click(function () {
                 $(".circle1").css({ "background-color": "red" });
                 // $(".circle1").css({ "background-color": "red", "box-shadow":"0 0 20px 10px red"});
-                $(".circle2").css({ "background-color": "black" });
-                $(".circle3").css("background-color", "black");
+                $(".circle2").css({ "background-color": "" });
+                $(".circle3").css("background-color", "");
             });
 
 
             $("#btn2").click(function () {
-                $(".circle1").css("background-color", "black");
                 $(".circle2").css("background-color", "yellow",);
-                $(".circle3").css("background-color", "black");
+                $(".circle1").css("background-color", "");
+                $(".circle3").css("background-color", "");
             });
 
             $("#btn3").click(function () {
-                $(".circle1").css("background-color", "black");
-                $(".circle2").css("background-color", "black");
                 $(".circle3").css("background-color", "green");
+                $(".circle1").css("background-color", "");
+                $(".circle2").css("background-color", "");
             });
 
         })
