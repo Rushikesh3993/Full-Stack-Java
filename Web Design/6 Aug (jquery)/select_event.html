@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <select id="myselecttag">
+        <option>select</option>
+        <option>1cr</option>
+        <option>2cr</option>
+        <option>3cr</option>
+        <option>4cr</option>
+    </select>
+
+    selected value : <span id="res"></span>
+
+    <script>
+        $(document).ready(function(){
+
+            // function demo(){
+            //     var v = $("#myselecttag").val();
+            //     alert(v);
+            // }
+            // $("#myselecttag").change(demo);
+            // demo();
+
+
+            $("#myselecttag").change(function(){
+                var v = $("#myselecttag").val();
+                // alert(v);
+
+                // $("#res").text(v);
+                document.getElementById("res").innerText = v;
+
+            });
+        });
+    </script>
+</body>
+</html
