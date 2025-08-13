@@ -1,3 +1,4 @@
 1.even odd.
 2.swap the variable.
 *// fast processing in the switch as compare to if else
+3.decision making diagram.
