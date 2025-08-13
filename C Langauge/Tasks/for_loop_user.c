@@ -3,6 +3,7 @@
 
 void main(){
     int start, end;
+    int sum = 0;
     printf("Start: ");
     scanf("%d", &start);
 
@@ -11,7 +12,8 @@ void main(){
 
     for (int i = start; i <= end; i++)
     {
-        printf("\t%d", i);
+        sum += i;
+        // printf("\t%d", i);
     }
-    
+     printf("\t%d", sum);
 }
