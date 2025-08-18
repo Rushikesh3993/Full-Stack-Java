@@ -8,7 +8,8 @@ int factorial(int n)
     {
         return 1;
     }else{
-        return n * factorial(n - 1);// recusrion here we call the recursion 
+        return n * factorial(n - 1);// recusrion here we call the recursion we use this  for less code  
+        // 5 * 5 -1
     }
 }
 
