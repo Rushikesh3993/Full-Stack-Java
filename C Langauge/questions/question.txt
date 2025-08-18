@@ -30,3 +30,6 @@ loacal and global variable
 difference between callby value and callby reference
 in callby value they canot change the original value they can make copie of that original value he canot modify that original value.(basically in this he cannot change modify value he make copie  of that original value).
 in callby reference he modify the value at same address and here we have to get the address  oringinal value modify
+why we use function ?  reusability
+recursion 
+call by reference and call by value solve problem with this?
