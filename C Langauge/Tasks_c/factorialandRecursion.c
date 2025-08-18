@@ -11,6 +11,9 @@ int factorial(int n)
         return n * factorial(n - 1);// recusrion here we call the recursion we use this  for less code  
         // 5 * 5 -1
     }
+
+   
+    
 }
 
 void main()
