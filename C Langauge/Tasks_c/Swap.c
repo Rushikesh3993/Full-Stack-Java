@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int swap(int *a, int *b){
+void swap(int *a, int *b){
     printf("\nBefore swaping a is %d and b is %d ",*a,*b);
     int temp = (*a);
     (*a) = (*b);
