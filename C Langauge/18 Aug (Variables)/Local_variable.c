@@ -14,3 +14,5 @@ void main(){
     demo();
 }
 
+
+// example pmp for local variable its only in pune
