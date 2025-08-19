@@ -33,3 +33,11 @@ in callby reference he modify the value at same address and here we have to get 
 why we use function ?  reusability
 recursion 
 call by reference and call by value solve problem with this?
+array advantages and disadvantages. different type data not allowed
+types of arrays
+one dimensional array most question.
+ascending and decending 
+sort array 
+search element in array.
+
+gets amd puts alternate of printf and scanf
