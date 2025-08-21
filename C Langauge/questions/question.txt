@@ -41,3 +41,8 @@ sort array
 search element in array.
 
 gets amd puts alternate of printf and scanf
+
+union allways take garbage value
+
+pointer def and even odd program 
+*p what happen and only p what will be print
