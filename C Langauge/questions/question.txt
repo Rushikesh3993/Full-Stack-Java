@@ -45,4 +45,55 @@ gets amd puts alternate of printf and scanf
 union allways take garbage value
 
 pointer def and even odd program 
-*p what happen and only p what will be print
+*p what happen and only p what will be print.
+
+gets that means we use insted of scanf.
+puts that means we use insted of prinft.
+
+strlen :- to find the length of that object
+strcpy :- this  use to copy any source to destination
+strcpy(ch3,ch1) = in that ch3 is destination and ch1 is source.
+strcat :- string concat that means we can combine the 2 string in that
+eg. "hello world".
+
+strrev(ch1) = in this way we can reverse the string.
+strlwr(ch1) = in this we can lower case our string.
+strupr(ch1) = in this we can upper case our string.
+strstr(ch1, "substring") = this can generate the substring function
+
+file handling:- 
+
+w - is for oopen the text file if not then create it but when we update it the previous data may be lose.
+a - is for open the text file if not then create it but when we update the previous data will be aslo there.
+
+
+r - opens an existing text  file for reading purpose.
+w - opens a text file for wrirting.if it does not exit, then a new file is  created.
+a - opens a text file for wrirting in appending mode.if it does not exit, then a new file is created.
+r+ opens a text file for both reading and wrirting.
+w+ - 
+
+
+
+varibale
+Datatype
+opreators
+
+control statements- decision making -if, else if , switch
+                  - loops difference
+
+fuction - advantages, default parameterizesd , return , callby value and call by reference
+
+string - string fuction - substring
+
+array - type of arrays
+
+structure vs  union
+
+pointer -  advantages, disadvantages- array, string, function
+
+file handling - modes, rewind(), disadvantages
+
+
+
+
