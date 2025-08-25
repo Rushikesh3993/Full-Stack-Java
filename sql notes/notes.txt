@@ -1,0 +1,21 @@
+sql is structured query language
+structure query language means store and manage the data in relational database management system.
+sql is used for database creation , deletion, fetching , row and modifying rows.
+tuffle means - rows 
+table is know as relation
+sql is not case sensitive.
+
+
+//database
+- create database mydb;
+- drop database mydb;
+- rename database mydb TO mysql;
+- use mydb;
+
+//table
+- create table table_name(column_name1 datatype, column_name2 datatype);
+- create table student(rollno int(255), name varchar(50));
+- insert into student(rollno,name)values(1, "Rushi");
+- DELETE FROM student
+WHERE rollno = 1 AND name = 'Rushi'
+LIMIT 1;
