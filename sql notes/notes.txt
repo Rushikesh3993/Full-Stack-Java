@@ -19,3 +19,80 @@ sql is not case sensitive.
 - DELETE FROM student
 WHERE rollno = 1 AND name = 'Rushi'
 LIMIT 1;
+
+
+//DELETE
+- delete from student; //dml
+  means only table content will be delete
+- drop table student; //ddl
+  means it will delete whole table with structure.
+- delete from student where rollno = 1;
+- delete from student where name = 'Sham';
+
+//clauses
+- WHERE
+- orderby
+
+
+- create table student(id int(255) auto_increment, name varchar(100),   primary key(id));
+- insert into student(name)values('abc);  //1 abc
+- insert into student(name)values('xyz'); //2 xyz
+- delete from student;
+- insert into student(name)values('pqr'); //3 pqr
+- truncate table student;
+- insert into student(name)values('lmn'); //1 lmn
+
+⬇️
+
+🔹 1. DELETE
+
+-  Removes specific rows from a table (using WHERE).
+  
+-  If WHERE is not given → all rows will be deleted.
+  
+-  Slower than TRUNCATE (checks each row).
+  
+-  Can be rolled back (if inside a transaction).
+  
+-  Does not reset AUTO_INCREMENT counter.
+
+Example:
+
+- DELETE FROM students WHERE rollno = 5;
+
+🔹 2. TRUNCATE
+
+- Removes all rows from a table (cannot use WHERE).
+
+- Very fast (doesn’t check each row).
+
+- Resets AUTO_INCREMENT counter.
+
+- Cannot be rolled back in some DBMS (like MySQL).
+
+- Table structure remains.
+
+👉 Example:
+
+- TRUNCATE TABLE students;
+
+🔹 3. DROP
+
+- Deletes the entire table (structure + data).
+
+- After DROP, the table no longer exists.
+
+- Cannot be rolled back.
+
+👉 Example:
+
+- DROP TABLE students;
+
+
+👉 So, in short:
+
+- DELETE = remove some rows
+
+- TRUNCATE = empty the table
+
+- DROP = remove the whole table
