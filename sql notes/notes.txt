@@ -4,6 +4,9 @@ sql is used for database creation , deletion, fetching , row and modifying rows.
 tuffle means - rows 
 table is know as relation
 sql is not case sensitive.
+stores the data in tabular format means rows and columns.
+select * from employee;
+insert into employee values(101,'Rushi','rushi@gmail.com');
 
 
 //database
@@ -96,3 +99,139 @@ Example:
 - TRUNCATE = empty the table
 
 - DROP = remove the whole table
+
+//auto_increment we can start from anywhere like 1 or 101.
+
+//alter
+alter table statement is used to add , modify or delete cloumns in an existing table.
+- it is also used to rename a table.
+- alter table student rename to students;
+- alter table studnets add address varchar(100);
+- alter table students modify address varchar(500);
+- alter table students change address per_address varchar(500);
+- alter table students drop column per_address;
+
+
+
+🔹 ALTER Command in SQL
+
+Used to modify the structure of an existing table (not the data).
+
+We can add, modify, rename, or drop columns or even rename the table.
+
+✅ Uses of ALTER
+
+1. Add a new column
+
+  - ALTER TABLE table_name ADD column_name datatype;
+
+  👉 Example:
+  - ALTER TABLE students ADD age INT;
+
+2. Delete (drop) a column
+
+   - ALTER TABLE table_name DROP COLUMN column_name;
+
+  👉 Example:
+
+  - ALTER TABLE students DROP COLUMN age;
+
+3. Modify datatype of a column
+
+   - ALTER TABLE table_name MODIFY column_name new_datatype;
+
+  👉 Example:
+
+  - ALTER TABLE students MODIFY name VARCHAR(50);
+
+4. Rename a column (MySQL way)
+
+   - ALTER TABLE table_name CHANGE old_name new_name datatype;
+
+  👉 Example:
+
+  - ALTER TABLE students CHANGE name full_name VARCHAR(50);
+
+5. Rename the table
+
+   - ALTER TABLE old_table_name RENAME TO new_table_name;
+
+  👉 Example:
+
+   - ALTER TABLE students RENAME TO college_students;
+
+⚡ Key Points
+
+ - ALTER changes the structure/schema of the table, not the data.
+
+ - Common tasks: ADD, DROP, MODIFY, CHANGE, RENAME.
+
+
+//keys
+**primary key
+- it is combination of two i.e is (unique + not null)
+alter command - for table modificaion
+alter table employee add primary key(eid);
+
+create 
+insert into
+select * from
+delete from 
+
+update query is used update the table content
+update employee set ename= 'Omkar' where eid=103;
+
+
+                    ////*****IMP***********////
+CRUD OPERATION -
+insert - insert into employee values()
+
+read - select * from employee
+
+update - update employee set ename= 'Omkar' where eid=103;
+
+delete - delete from employee where eid=id;
+
+                  ////*****IMP***********////
+
+
+task
+create database employee;
+create table employees(eid int, ename varchar(100), eemail varchar(100),euid int,primary key(eid,euid));
+insert into employees(eid, ename, eemail,euid)values(1, 'rushi','rushi@gmail.com',1234567),(2,'ram','ram@gmail.com',9087643),(3,'sham','sham@gmail.com',7347983),(4,'raj','raj@gmail.com',2839480);
+
+interview question:- 
+- what is difference betwwen delete drop and truncate?
+ - delete is use with the where conditioin and it removes the table data or content , Does not reset AUTO_INCREMENT counter.
+
+ - drop table staff; remove the whole table and structure also
+
+- truncate is use to remove all records of table not the table structure.
+ - Resets AUTO_INCREMENT counter.
+ - truncate table staff; //remove all the records not table
+
+
+ select * from staff; //fetch the records
+
+ //select with  condtion 
+ i want perticlular id wise records
+ select * from staff where sid=101;//fetch the record with given staff id
+ select * from employees where eid=1 and ename= 'rushi';
+ in this AND operator if 1 condition is false then it wont work
+ but in OR condition if 1 condition is true then it work
+
+ //to get only one column
+ select ename from employees;
+ select ename, eemail from employees;
+
+ //question
+ whos name start from a print that  records?
+ - then we use LIKE operator 
+ - select * from staff where ename LIKE 'A%';
+ - in this '%A' then he check name from end side eg akansh'a'
+ - in this 'A%' then he check name from start side eg 'a'kansha
+
+ select * from staff where ename LIKE '_A%';
+ - use this underscore to check the second name from name a'a'ditya
+ select * from staff where ename LIKE '__d%';
+ - use this underscore to check the third character from name aa'd'itya
