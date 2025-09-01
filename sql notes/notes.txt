@@ -235,3 +235,64 @@ interview question:-
  - use this underscore to check the second name from name a'a'ditya
  select * from staff where ename LIKE '__d%';
  - use this underscore to check the third character from name aa'd'itya
+
+
+
+//in
+- select * from employee where name IN("abc","lmn","pqr","xyz");
+- select * from employee where name = "abc" OR name="lmn" OR name="pqr" OR name="xyz";
+
+
+//select null
+- null values are used to represent missing unknown data.
+- select * from employees where name is null;
+- select * from employees where name is not null;
+to add null data
+- insert into employee(id,name)values(5,null);
+
+//insert
+- insert into employee values(6,"we",50000);
+- insert into employee values(6,"we"); //error
+- insert into employee(id,name) values(6,"we"); //error solve
+
+//Joins
+- types
+  - inner join
+     - get the only matching data from two tables.
+     - select * from student1 INNER JOIN student2 ON student1.id = student2.id;//this get double id  
+
+     to fetch proper details from two tables
+     - select student1.id, student1.name, student1.address, student2.contact, student2.pincode from student1 INNER JOIN student2 ON student1.id = student2.id;
+     
+    - select * from student1 INNER JOIN student2 ON student1.id = student2.id;
+    - select * from student1 JOIN student2 ON student1.id = student2.id;
+    this two are same inner join and only join
+    
+  - left join
+     - select * from student1 left JOIN student2 ON student1.id = student2.id; 
+     - only get left side data and matching one only.
+     - if there are no matching value return null.
+
+  - Right join
+     - select * from student1 right JOIN student2 ON student1.id = student2.id; 
+     - only get right side data and matching one only.
+     - if there are no matching value return null.
+
+  - Full join
+    - that is the combination of left join and right join.
+    - select * from student1 left JOIN student2 ON student1.id = student2.id  UNION select * from student1 right JOIN student2 ON student1.id = student2.id;
+
+  - Cross join
+    - 1  1
+      1  3
+      2  1
+      2  3  
+    - select * from student1 CROSS JOIN student2;
+    - select * from student1 , student2;
+
+
+#question
+- what is join and what are the types of joins.
+
+#task
+- select * from emp1 INNER JOIN emp2 INNER JOIN emp3 ON emp1.id = emp2.id = emp3.id;
