@@ -296,3 +296,22 @@ to add null data
 
 #task
 - select * from emp1 INNER JOIN emp2 INNER JOIN emp3 ON emp1.id = emp2.id = emp3.id;
+
+//Data types
+- INT : integer type used  for whole numbers
+- varchar(100) : variable length string upto 100 characters
+- Enum : a string object with a value choosen from a list of permitted value eg. ENUM :('Male',Female','Other')
+- Date : Stores date values eg. date_of_birth date
+- Timestamp : Stores date and time automatically set to the current Timestamp
+- BOOLEAN: Stores TRUE or FALSE values, often used for flags like is_active.
+- DECIMAL(10, 2): Stores exact numeric data values, useful for financial data. The first number is the total number of digits, and the second is the number of digits after the decimal point
+
+//Constraints
+- AUTO_INCREMENT : Automatically generates a unique number for each row.
+- PRIMARY KEY: Uniquely identifies each row in the table. it is combination of two i.e is (unique + not null)
+- NOT NULL: Ensures a column cannot have a NULL value.
+- UNIQUE: Ensures all values in a column are different.
+- DEFAULT: Sets a default value for a column if no value is provided. eg. created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, is_active BOOLEAN DEFAULT TRUE
+
+//rename 
+rename table user to programmers;
