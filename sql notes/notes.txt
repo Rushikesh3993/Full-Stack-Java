@@ -315,3 +315,5 @@ to add null data
 
 //rename 
 rename table user to programmers;
+
+this is rename command use to change the prev name to new.
