@@ -19,7 +19,7 @@
     }
     else
     {
-        printf("Not Found");
+        printf("Not Found program close");
     }
     
  }
